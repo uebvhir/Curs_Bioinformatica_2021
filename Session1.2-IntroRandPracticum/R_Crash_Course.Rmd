@@ -10,7 +10,6 @@ output:
     fonttheme: "structurebold"
   slide_level: 2
 footer: "R for Data Science"
-
 ---
 
 ```{r setLicense, child = 'license.Rmd'}
@@ -28,8 +27,8 @@ footer: "R for Data Science"
     + Variables and data types
     + Functions, Packages and more stuff
 - Working with data
-    + Selecting, Filtering and ordering datasets
-    + A primer of statistics and plots
+    + _Selecting, Filtering and ordering datasets_
+    + _A primer of statistics and plots_
     + R Notebooks and RMarkdown
 
 ## Motivation
@@ -196,14 +195,13 @@ install.packages("tidyverse")
 
 ## Reading Excel or csv files (continued)
 
-- Code generated for reading the files can be reused any time changing the file name if needed.
-
 ```{r, eval=FALSE}
 # Read Excel file
 library(readxl)
 otherData <- read_excel("otherFiles")
 ```
 
+- Code generated for reading the files can be reused any time changing the file name if needed.
 
 ## Interlude: Summarizing data
 
