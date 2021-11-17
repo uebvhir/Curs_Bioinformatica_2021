@@ -5,12 +5,6 @@
 \documentclass[
   ignorenonframetext,
 ]{beamer}
-\title{R crash course: A quick introduction to R}
-\author{Alex Sanchez, Miriam Mota, Ricardo Gonzalo and\\
-Santiago Perez-Hoyos}
-\date{Statistics and Bioinformatics Unit. Vall d'Hebron Institut de
-Recerca}
-
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
@@ -51,8 +45,8 @@ Recerca}
 }
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -134,9 +128,15 @@ Recerca}
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\ifLuaTeX
+\ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
+
+\title{R crash course: A quick introduction to R}
+\author{Alex Sanchez, Miriam Mota, Ricardo Gonzalo and\\
+Santiago Perez-Hoyos}
+\date{Statistics and Bioinformatics Unit. Vall d'Hebron Institut de
+Recerca}
 
 \begin{document}
 \frame{\titlepage}
